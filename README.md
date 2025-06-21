@@ -21,7 +21,7 @@ cpanm --local-lib local SQL::Translator
 cpanm --local-lib local GraphViz
 ```
 
-# install the package OPM file from Github
+## install the package OPM file from Github
 get the Package from the GitHub release.
 
 Current Release: [er-schema-11.0.0.opm](https://github.com/littlemole/er-schema/releases/download/11.0.0/er-schema-11.0.0.opm)
