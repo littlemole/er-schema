@@ -1,0 +1,49 @@
+[% RenderBlockStart("Overview") %]
+<div class="MainBox ARIARoleMain LayoutFixedSidebar SidebarFirst">
+
+    <div class="ContentColumn">
+        <div class="WidgetSimple ERSchema" >
+
+[% RenderBlockStart("NoSchemaDump") %]
+			<div class="ERSchemaImgContainer" >
+				<img id="loader" src="[% Data.WebPath | html %]skins/Agent/default/img/loader.gif">
+			</div>
+			<p>
+				Looks like you need to regenerate the schema diagrams. Press button.
+			</p>
+			<form id="RegenerateForm" method="Post">
+				<input type="hidden" name="Action" value="AdminERSchema" >
+				<input type="hidden" name="Subaction" value="Regenerate" >
+				<button>Regenerate</button>
+			</form>
+			<div id="schema" diagram="" />
+[% RenderBlockEnd("NoSchemaDump") %]
+[% RenderBlockStart("OverviewResult") %]
+			<div class="ERSchemaImgContainer">
+				<img id="loader" src="[% Data.WebPath | html %]skins/Agent/default/img/loader.gif">
+			</div>
+			<form id="RegenerateForm" style="float:right" method="Post">
+				<input type="hidden" name="Action" value="AdminERSchema" >
+				<input type="hidden" name="Subaction" value="Regenerate" >
+				<button class="CallForAction Primary">Regenerate</button>
+			</form>
+			<form id="DiagramForm" method="Post" >
+				[% Data.Selection %]
+				<input type="hidden" name="Action" value="AdminERSchema" >
+
+			</form>
+            <div class="Content">
+                <p>[% Translate("Use mouse and wheel to pan and zoom the diagram.") | html %]</p>
+            </div>
+			<div>
+			<img diagram="[% Data.Diagram | url %]" id="schema" src="[% Data.WebPath | html %]common/img/[% Data.Diagram | uri %]" >
+			</div>
+[% RenderBlockEnd("OverviewResult") %]
+
+
+        </div>
+    </div>
+    <div class="Clear"></div>
+</div>
+[% RenderBlockEnd("Overview") %]
+

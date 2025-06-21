@@ -1,0 +1,22 @@
+div.ERSchema {
+	height:80vw;	
+}
+
+div.ERSchemaImgContainer {
+	width:100%;
+}
+
+#loader {
+	width:32px;
+	display:none;
+	margin:auto;
+	
+}
+
+#diagramForm {
+	float:left;
+}
+
+#schema {
+	width:150vw;
+}

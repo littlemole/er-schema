@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<otobo_config version="2.0" init="Application">
+    <Setting Name="Frontend::Module###AdminERSchema" Required="1" Valid="1">
+        <Description Translatable="1">FrontendModuleRegistration for er-schema module.</Description>
+        <Navigation>Frontend::Admin::ModuleRegistration</Navigation>
+        <Value>
+            <Item ValueType="FrontendRegistration">
+                <Hash>
+                    <Item Key="Group">
+                        <Array>
+                            <Item>admin</Item>
+                        </Array>
+                    </Item>
+                    <Item Key="GroupRo">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="Description" Translatable="1">The otobo er-schema module.</Item>
+                    <Item Key="Title" Translatable="1">ERSchema</Item>
+                    <Item Key="NavBarName">ERSchema</Item>
+                </Hash>
+            </Item>
+        </Value>
+    </Setting>
+    <Setting Name="Frontend::NavigationModule###AdminERSchema" Required="0" Valid="1">
+        <Description Translatable="1">Admin area navigation for the agent interface.</Description>
+        <Navigation>Frontend::Admin::ModuleRegistration::AdminOverview</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Group">
+                    <Array>
+                        <Item>admin</Item>
+                    </Array>
+                </Item>
+                <Item Key="GroupRo">
+                    <Array>
+                    </Array>
+                </Item>
+                <Item Key="Module">Kernel::Output::HTML::NavBar::ModuleAdmin</Item>
+                <Item Key="Name" Translatable="1">ERSchema</Item>
+                <Item Key="Block">Users</Item>
+                <Item Key="Description" Translatable="1">View ER Schema.</Item>
+                <Item Key="IconBig">fa fa-table</Item>
+                <Item Key="IconSmall"></Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Loader::Module::AdminERSchema###002-Filename" Required="0" Valid="1">
+        <Description Translatable="1">Loader module registration for the agent interface.</Description>
+        <Navigation>Frontend::Admin::ModuleRegistration::Loader</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="CSS">
+                    <Array>
+                        <Item>er-schema.css</Item>
+                    </Array>
+                </Item>
+                <Item Key="JavaScript">
+                    <Array>
+                        <Item>thirdparty/panzoom.min.js</Item>
+                        <Item>er-schema.js</Item>
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Frontend::Navigation###AdminERSchema###002-Filename" Required="0" Valid="1">
+        <Description Translatable="1">Main menu item registration.</Description>
+        <Navigation>Frontend::Admin::ModuleRegistration::MainMenu</Navigation>
+        <Value>
+            <Array>
+                <DefaultItem ValueType="FrontendNavigation">
+                    <Hash>
+                    </Hash>
+                </DefaultItem>
+            </Array>
+        </Value>
+    </Setting>
+
+
+</otobo_config>
