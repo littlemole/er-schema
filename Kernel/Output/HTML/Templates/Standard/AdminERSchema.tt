@@ -14,7 +14,7 @@
 			<form id="RegenerateForm" method="Post">
 				<input type="hidden" name="Action" value="AdminERSchema" >
 				<input type="hidden" name="Subaction" value="Regenerate" >
-				<button>Regenerate</button>
+				<button class="CallForAction Primary">Regenerate</button>
 			</form>
 			<div id="schema" diagram="" />
 [% RenderBlockEnd("NoSchemaDump") %]
