@@ -45,7 +45,7 @@ sub Run {
 
 		$Self->_MakeSchema();
 		$Self->_MakeSchema( RankDir => 'LR' );
-		$Self->_MakeSchema( Type => 'meato');
+		$Self->_MakeSchema( Type => 'neato');
 		$Self->_MakeSchema( Type => 'twopi');
     }
 

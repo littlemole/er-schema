@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otobo_package version="1.0">
     <Name>er-schema</Name>
-    <Version>0.0.0</Version>
+    <Version>11.0.1</Version>
     <Framework>11.0.x</Framework>
     <Vendor>littlemole</Vendor>
-    <URL>https://otobo.de/</URL>
+    <URL>https://github.com/littlemole/er-schema</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
     <Description Lang="en">A Wiki Module for Otobo</Description>
 
 
     <Filelist>
-        <File Permission="660" Location="Kernel/Config/Files/XML/er-schema.xml" />
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AdminERSchema.tt" />
-        <File Permission="660" Location="Kernel/Modules/AdminERSchema.pm" />
-        <File Permission="660" Location="var/httpd/htdocs/js/er-schema.js" />
-        <File Permission="660" Location="var/httpd/htdocs/js/thirdparty/panzoom.min.js" />
-        <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/er-schema.css" />
+		<File Permission="660" Location="Kernel/Config/Files/XML/er-schema.xml" />
+		<File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AdminERSchema.tt" />
+		<File Permission="660" Location="Kernel/Modules/AdminERSchema.pm" />
+		<File Permission="660" Location="var/httpd/htdocs/js/er-schema.js" />
+		<File Permission="660" Location="var/httpd/htdocs/js/thirdparty/panzoom.min.js" />
+		<File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/er-schema.css" />
     </Filelist>
 <!--
-    <ModuleRequired>Config::General</ModuleRequired>
-    <ModuleRequired>Math::Bezier</ModuleRequired>
-    <ModuleRequired>SQL::Translator</ModuleRequired>
-    <ModuleRequired>GraphViz</ModuleRequired>
+	<ModuleRequired>Config::General</ModuleRequired>
+	<ModuleRequired>Math::Bezier</ModuleRequired>
+	<ModuleRequired>SQL::Translator</ModuleRequired>
+	<ModuleRequired>GraphViz</ModuleRequired>
 -->
 </otobo_package>
+
